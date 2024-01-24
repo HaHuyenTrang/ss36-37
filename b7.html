@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính cầm tay</title>
+    <style>
+      .calculator {
+          width: 200px;
+          border: 1px solid black;
+          padding: 10px;
+      }
+      .calculator input {
+          width: 100%;
+          margin-bottom: 5px;
+      }
+      .calculator .row {
+          display: flex;
+          justify-content: space-between;
+      }
+      .calculator .row .button {
+          width: 48%;
+      }
+  </style>
+</head>
+<body>
+  <body>
+    <div class="calculator">
+        <input type="text" id="result" disabled><br>
+        <div class="row">
+            <button class="button" onclick="appendNumber(1)">1</button>
+            <button class="button" onclick="appendNumber(2)">2</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber(3)">3</button>
+            <button class="button" onclick="performOperation('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber(4)">4</button>
+            <button class="button" onclick="appendNumber(5)">5</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber(6)">6</button>
+            <button class="button" onclick="performOperation('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber(7)">7</button>
+            <button class="button" onclick="appendNumber(8)">8</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber(9)">9</button>
+            <button class="button" onclick="performOperation('/')">/</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="clearResult()">AC</button>
+            <button class="button" onclick="performOperation('*')">*</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber(0)">0</button>
+            <button class="button" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+</body>
+<script src="./b7.js"></script>
+</html>
